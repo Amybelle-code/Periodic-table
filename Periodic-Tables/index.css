@@ -1,0 +1,418 @@
+body{
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 50;
+    font-size: larger;
+    background-color: #000;
+}
+#content{
+    display: grid;
+    max-width: 1300px;
+    margin: 80px auto 0 80px;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(7, 70px);
+    grid-gap: 5px;
+    grid-template-areas:
+    "one . . . . . . . . . . . . . . . . two"
+    "three four . . . . . . . . . . five six seven eight nine ten"
+    "eleven twelve . . . . . . . . . . thirteen fourteen fivteen sixteen seventeen eighteen"
+    "nineteen twenty twenty-one twenty-two twenty-three twenty-four twenty-five twenty-six twenty-seven twenty-eight twenty-nine thirty thirty-one thirty-two thirty-three thirty-four thirty-five thirty-six"
+    "thirty-seven thirty-eight thirty-nine fourty fourty-one fourty-two fourty-three fourty-four fourty-five fourty-six fourty-seven fourty-eight fourty-nine fifty fifty-one fifty-two fifty-three fifty-four"
+    "fifty-five fifty-six fifty-seven seventy-two seventy-three seventy-four seventy-five seventy-six seventy-seven seventy-eight seventy-nine eighty eighty-one eighty-two eighty-three eighty-four eighty-five eighty-six "
+    "eighty-seven eighty-eight eighty-nine hundred-four hundred-five hundred-six hundred-seven hundred-eight hundred-nine hundred-ten hundred-eleven hundred-twelve hundred-thirteen hundred-fourteen hundred-fiveteen hundred-sixteen hundred-seventeen hundred-eighteen" 
+}
+.wrapper__num{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+}
+.wrapper-side{
+    position:absolute;
+    display: grid;
+    grid-template-columns: 40px;
+    grid-auto-rows: 45x;
+    top: 108px;
+    grid-gap: 25px;
+}
+side-num{
+    margin: 10px;
+}
+#content div{
+    /* background-color: green; */
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#content div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid yellow; */
+}
+#content div p{
+    font-size: 15px;
+    font-weight: 900;
+}
+.one{
+    grid-area: one;
+    background-color: rgb(24, 85, 24);
+}
+.two{
+    grid-area: two;
+    background-color: rgb(59, 105, 15);
+}
+.three{
+    grid-area: three;
+    background-color: rgb(218, 26, 176);
+}
+.four{
+    grid-area: four;
+    background-color: rgb(30, 46, 117);
+}
+.five{
+    grid-area: five;
+    background-color: rgb(150, 68, 13);
+}
+.six{
+    grid-area: six;
+    background-color: rgb(24, 85, 24);
+}
+.seven{
+    grid-area: seven;
+    background-color: rgb(24, 85, 24);
+}
+.eight{
+    grid-area: eight;
+    background-color: rgb(24, 85, 24);
+}
+.nine{
+    grid-area: nine;
+    background-color: rgb(22, 139, 207);
+}
+.ten{
+    grid-area: ten;
+    background-color: rgb(59, 105, 15);
+}
+.eleven{
+    grid-area: eleven;
+    background-color: rgb(218, 26, 176);
+}
+.twelve{
+    grid-area: twelve;
+    background-color: rgb(30, 46, 117);
+}
+.thirteen{
+    grid-area: thirteen;
+    background-color: rgb(103, 23, 139);
+}
+.fourteen{
+    grid-area: fourteen;
+    background-color: rgb(150, 68, 13);
+}
+.fivteen{
+    grid-area: fivteen;
+    background-color: rgb(24, 85, 24);
+}
+.sixteen{
+    grid-area: sixteen;
+    background-color: rgb(24, 85, 24);
+}
+.seventeen{
+    grid-area: seventeen;
+    background-color: rgb(22, 139, 207);
+}
+.eighteen{
+    grid-area: eighteen;
+    background-color: rgb(59, 105, 15);
+}
+.nineteen{
+    grid-area: nineteen;
+    background-color: rgb(218, 26, 176);
+}
+.twenty{
+    grid-area: twenty;
+    background-color: rgb(30, 46, 117);
+}
+.twenty-one{
+    grid-area: twenty-one;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-two{
+    grid-area: twenty-two;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-three{
+    grid-area: twenty-three;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-four{
+    grid-area: twenty-four;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-five{
+    grid-area: twenty-five;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-six{
+    grid-area: twenty-six;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-seven{
+    grid-area: twenty-seven;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-eight{
+    grid-area: twenty-eight;
+    background-color: rgb(117, 11, 11);
+}
+.twenty-nine{
+    grid-area: twenty-nine;
+    background-color: rgb(117, 11, 11);
+}
+.thirty{
+    grid-area: thirty;
+    background-color: rgb(117, 11, 11);
+}
+.thirty-one{
+    grid-area: thirty-one;
+    background-color: rgb(103, 23, 139);
+}
+.thirty-two{
+    grid-area: thirty-two;
+    background-color: rgb(150, 68, 13);
+}
+.thirty-three{
+    grid-area: thirty-three;
+    background-color: rgb(150, 68, 13);
+}
+.thirty-four{
+    grid-area: thirty-four;
+    background-color: rgb(24, 85, 24);
+}
+.thirty-five{
+    grid-area: thirty-five;
+    background-color: rgb(22, 139, 207);
+}
+.thirty-six{
+    grid-area: thirty-six;
+    background-color: rgb(59, 105, 15);
+}
+.thirty-seven{
+    grid-area: thirty-seven;
+    background-color: rgb(218, 26, 176);
+}
+.thirty-eight{
+    grid-area: thirty-eight;
+    background-color: rgb(30, 46, 117);
+}
+.thirty-nine{
+    grid-area: thirty-nine;
+    background-color: rgb(117, 11, 11);
+}
+.fourty{
+    grid-area: fourty;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-one{
+    grid-area: fourty-one;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-two{
+    grid-area: fourty-two;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-three{
+    grid-area: fourty-three;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-four{
+    grid-area: fourty-four;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-five{
+    grid-area: fourty-five;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-six{
+    grid-area: fourty-six;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-seven{
+    grid-area: fourty-seven;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-eight{
+    grid-area: fourty-eight;
+    background-color: rgb(117, 11, 11);
+}
+.fourty-nine{
+    grid-area: fourty-nine;
+    background-color: rgb(103, 23, 139);
+}
+.fifty{
+    grid-area: fifty;
+    background-color: rgb(103, 23, 139);
+}
+.fifty-one{
+    grid-area: fifty-one;
+    background-color: rgb(150, 68, 13);
+}
+.fifty-two{
+    grid-area: fifty-two;
+    background-color: rgb(150, 68, 13);
+}
+.fifty-three{
+    grid-area: fifty-three;
+    background-color: rgb(22, 139, 207);
+}
+.fifty-four{
+    grid-area: fifty-four;
+    background-color: rgb(59, 105, 15);
+}
+.fifty-five{
+    grid-area: fifty-five;
+    background-color: rgb(218, 26, 176);
+}
+.fifty-six{
+    grid-area: fifty-six;
+    background-color: rgb(30, 46, 117);
+}
+.fifty-seven{
+    grid-area: fifty-seven;
+    background-color: rgb(0, 0, 0);
+}
+.seventy-two{
+    grid-area: seventy-two;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-three{
+    grid-area: seventy-three;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-four{
+    grid-area: seventy-four;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-five{
+    grid-area: seventy-five;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-six{
+    grid-area: seventy-six;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-seven{
+    grid-area: seventy-seven;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-eight{
+    grid-area: seventy-eight;
+    background-color: rgb(117, 11, 11);
+}
+.seventy-nine{
+    grid-area: seventy-nine;
+    background-color: rgb(117, 11, 11);
+}
+.eighty{
+    grid-area: eighty;
+    background-color: rgb(117, 11, 11);
+}
+.eighty-one{
+    grid-area: eighty-one;
+    background-color: rgb(103, 23, 139);
+}
+.eighty-two{
+    grid-area: eighty-two;
+    background-color: rgb(103, 23, 139);
+}
+.eighty-three{
+    grid-area: eighty-three;
+    background-color: rgb(103, 23, 139);
+}
+.eighty-four{
+    grid-area: eighty-four;
+    background-color: rgb(150, 68, 13);
+}
+.eighty-five{
+    grid-area: eighty-five;
+    background-color: rgb(22, 139, 207);
+}
+.eighty-six{
+    grid-area: eighty-six;
+    background-color: rgb(59, 105, 15);
+}
+.eighty-seven{
+    grid-area: eighty-seven;
+    background-color: rgb(218, 26, 176);
+}
+.eighty-eight{
+    grid-area: eighty-eight;
+    background-color: rgb(30, 46, 117);
+}
+.eighty-nine{
+    grid-area: eighty-nine;
+    background-color: #000;
+}
+.hundred-four{
+    grid-area:hundred-four;
+    background-color: rgb(117, 11, 11);
+}
+.hundred-five{
+    grid-area:hundred-five;
+    background-color: rgb(117, 11, 11); 
+}
+.hundred-six{
+    grid-area:hundred-six;
+    background-color: rgb(117, 11, 11);
+}
+.hundred-seven{
+    grid-area:hundred-seven; 
+    background-color: rgb(117, 11, 11);
+}
+.hundred-eight{
+    grid-area:hundred-eight; 
+    background-color: rgb(117, 11, 11);
+}
+.hundred-nine{
+    grid-area:hundred-nine;
+    background-color: rgb(117, 11, 11);
+}
+.hundred-ten{
+    grid-area:hundred-ten; 
+    background-color: rgb(117, 11, 11);
+}
+.hundred-eleven{
+    grid-area:hundred-eleven; 
+    background-color: rgb(117, 11, 11);
+}
+.hundred-twelve{
+    grid-area:hundred-twelve;
+    background-color: rgb(117, 11, 11);
+}
+.hundred-thirteen{
+    grid-area:hundred-thirteen ;
+    background-color: rgb(103, 23, 139);
+}
+.hundred-fourteen{
+    grid-area:hundred-fourteen; 
+    background-color: rgb(103, 23, 139);
+}
+.hundred-fiveteen{
+    grid-area:hundred-fiveteen ;
+    background-color: rgb(103, 23, 139);
+}
+.hundred-sixteen{
+    grid-area:hundred-sixteen ;
+    background-color: rgb(103, 23, 139);
+}
+.hundred-seventeen{
+    grid-area:hundred-seventeen; 
+    background-color: rgb(22, 139, 207);
+}
+.hundred-eighteen{
+    grid-area:hundred-eighteen ;
+    background-color: rgb(59, 105, 15);
+}
